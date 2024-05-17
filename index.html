@@ -10,10 +10,19 @@
     <main>
         <div id="container">
             <h2>Temperature Converter</h2>
+            <p display></p>
             <label for="celcius">Celcius</label>
-            <input type="text" id="celcius" placeholder="Enter degrees celcius">
+            <div class="input">
+                <input type="text" id="celcius" placeholder="Enter degrees celcius">
+                <input type="button" value="Clear Cel" clearCelcius>
+            </div>
+
             <label for="fahrenheit">Fahrenheit</label>
-            <input type="text" id="fahrenheit" placeholder="Enter degrees fahrenheit">
+            <div>
+                <input type="text" id="fahrenheit" placeholder="Enter degrees fahrenheit">
+                <input type="button" value="Clear Fah" clearFah>
+            </div>
+
             <input type="button" value="Convert" convert-btn>
         </div>
     </main>

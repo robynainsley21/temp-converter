@@ -34,7 +34,7 @@ body {
 }
 
 label {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 input {
@@ -48,4 +48,10 @@ input[type="button"] {
   box-shadow: var(--box-shadow);
   font-weight: bold;
   border-radius: 5px;
+}
+
+@media (width < 375px){
+  #container{
+    width: 16rem;
+  }
 }
