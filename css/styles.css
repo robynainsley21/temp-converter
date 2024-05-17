@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #a0deff;
+  --bg-light: #fff9d0;
+  --btn: #5ab2ff;
+  --box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-light);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: var(--primary);
+}
+
+label {
+  margin-top: 2rem;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+input[type="button"] {
+  margin-top: 1.5rem;
+  background-color: var(--btn);
+  border: 1px solid var(--btn);
+  box-shadow: var(--box-shadow);
+  font-weight: bold;
+  border-radius: 5px;
+}
