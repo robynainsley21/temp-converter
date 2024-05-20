@@ -21,6 +21,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: var(--bg-light);
+  font-family: "Roboto", sans-serif;
 }
 
 #container {
@@ -48,6 +49,15 @@ input[type="button"] {
   box-shadow: var(--box-shadow);
   font-weight: bold;
   border-radius: 5px;
+
+  &:hover{
+    transform: scale(1.08);
+  }
+}
+
+p[display]{
+  padding-top: 1.8rem;
+  color: red;
 }
 
 @media (width < 375px){

@@ -11,7 +11,11 @@ domElements.convertBtn.addEventListener("click", () => {
   let celciusValue = +domElements.celcius.value;
   let fahrenheitValue = +domElements.fahrenheit.value;
 
-  if (celciusValue && fahrenheitValue) {
+  if(!celciusValue && !fahrenheitValue){
+    domElements.errorDisplay.textContent =
+    "Error: Please enter a value";
+
+  } else if (celciusValue && fahrenheitValue) {
     domElements.errorDisplay.textContent =
       "Error: Please clear one of the fields.";
   } else if (celciusValue) {
