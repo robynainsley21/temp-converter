@@ -8,6 +8,7 @@
 
 :root {
   --primary: #a0deff;
+  --secondary: #FFF2D7;
   --bg-light: #fff9d0;
   --btn: #5ab2ff;
   --box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -20,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--bg-light);
+  background-color: var(--secondary);
   font-family: "Roboto", sans-serif;
 }
 
@@ -29,9 +30,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding: 2rem;
-  border: 1px solid;
+  border: 1px solid var(--primary);
   border-radius: 10px;
   background-color: var(--primary);
+  box-shadow: var(--box-shadow);
+
 }
 
 label {
@@ -42,26 +45,34 @@ input {
   padding: 0.5rem;
 }
 
+
 input[type="button"] {
-  margin-top: 1.5rem;
   background-color: var(--btn);
   border: 1px solid var(--btn);
   box-shadow: var(--box-shadow);
   font-weight: bold;
   border-radius: 5px;
 
-  &:hover{
+  &:hover {
     transform: scale(1.08);
+  }
+
+  &:last-child {
+    margin-top: 1.5rem;
   }
 }
 
-p[display]{
+p[display] {
   padding-top: 1.8rem;
   color: red;
 }
 
-@media (width < 375px){
-  #container{
+@media (width < 375px) {
+  #container {
     width: 16rem;
+  }
+
+  label {
+    margin-bottom: 1rem;
   }
 }

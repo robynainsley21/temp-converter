@@ -17,7 +17,7 @@ domElements.convertBtn.addEventListener("click", () => {
 
   } else if (celciusValue && fahrenheitValue) {
     domElements.errorDisplay.textContent =
-      "Error: Please clear one of the fields.";
+      "Error: Please clear a field";
   } else if (celciusValue) {
     let fahCalc = parseFloat(celciusValue * (9 / 5) + 32).toFixed(2);
 
